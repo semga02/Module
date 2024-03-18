@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Экран регистрации</title>
+    <style>
+	
+      
+        header{width: 100%; background: #D8E3AB url(logo.png) no-repeat 5% 50%; height: 15%;}
+    .title{font-size: 46px; padding-top: 10px; text-align: center;}
+    .menu{list-style: none; position: absolute; top: 9px; right: 110px;}
+        </style>
+</head>
+<body>
+    <div id = "wrap">
+        <header>
+            <div class = "title">Спортивная секция "Бросок кобры"</div>
+<ul class = "menu">
+<li><a href = "index.html">Главная</a></li>
+<li><a href = "page2.html">Вход</a></li>
+<li><a href = "page3.html">Регистрация</a></li>
+        </header>
+        </div>
+<div id="main">
+<br></br>
+	 <div class="form">
+    <h2> Регистрация</h2>
+
+    <form action="reg.php" method="POST">
+			<div class="personal">
+<p class="lbl">Имя:*:</p>
+	<input required type="text"  name="Imya" size="40" maxlength="20">
+	<p class="lbl">Фамилия:*</p>
+	<input required type="text"  name="Fam" size="40" maxlength="20">
+    <p class="lbl">Отчество:*</p>
+	<input  required type="text" name="Otch" size="40" maxlength="20">
+   
+    <p class="lbl">Логин:*</p>
+	<input required type="text"  name="Login" size="40" maxlength="20">
+    <p class="lbl">Пароль:*</p>
+	<input required type="password" size="40" name="Password" maxlength="20">
+	
+	<br>
+    
+    <input type="submit"  value="Регистрация" class="btn btn-primary btn-lg btn-block">
+    <input type="reset" class="button" value="Очистить">
+             
+    <script type="text/javascript">
+  
+        var name=document.getElementById("nam");
+        var click=document.getElementById("but");
+         
+         
+        click.onclick=function()
+           {
+            if(!name.value){alert("Заполните все поля!!");}
+           
+            else {alert("Добро пожаловать!");}
+           
+            
+         
+           }; 
+         
+        </script>
+	
+   
+</form>
+    </div>  
+</body>	
+</html>

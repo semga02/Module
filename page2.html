@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Авторизация</title>
+	<style>
+	
+				input:valid {
+				  border: 1px solid black;
+				  background: #a52a2a;
+				}
+				
+				input:invalid {
+				  border: 1px solid black;
+				}
+				
+				input:invalid:required {
+				  background: #fff5ee;
+				}
+				header{width: 100%; background: #D8E3AB url(logo.png) no-repeat 5% 50%; height: 20%;}
+            .title{font-size: 46px; padding-top: 10px; text-align: center;}
+            .menu{list-style: none; position: absolute; top: 9px; right: 60px;}
+				</style>
+</head>
+<body>
+	<div id = "wrap">
+        <header>
+            <div class = "title">Спортивная секция "Бросок кобры"</div>
+<ul class = "menu">
+<li><a href = "index.html">Главная</a></li>
+<li><a href = "page2.html">Вход</a></li>
+<li><a href = "page3.html">Регистрация</a></li>
+        </header>
+        </div>
+ <div id="main">
+ <br></br>
+	 <div class="form">
+    <h2>Экран аунтефикации</h2>
+	<form action="avt.php" method="POST"><br>
+	
+			<div class="personal">
+
+<p class="lbl">Логин:</p>
+	<input  required pattern="[a-zA-Z0-9!@#$%^&*]" id="nam" type="text" name="Login" size="40" maxlength="20">
+	<p class="lbl">Пароль:</p>
+	<input required pattern="[a-zA-Z0-9!@#$%^&*]" id="nam" type="password" name="Password" size="40" maxlength="20">
+	
+	<br>
+	
+             
+	<div class="form-group row">
+		<div class="col-lg-12">
+	<input type="submit"  name="HelpEnterBtn" value="Войти" id="but" class="btn btn-primary btn-lg btn-block">
+	<input type="reset" class="button" value="Очистить" >
+</form>
+   </div> </div></div>
+   
+
+<script type="text/javascript">
+  
+var name=document.getElementById("nam");
+var click=document.getElementById("but");
+ 
+ 
+click.onclick=function()
+   {
+    if(!name.value){alert("Заполните все поля!!");}
+   
+    else {alert("Добро пожаловать!");}
+   
+    
+ 
+   }; 
+ 
+</script>
+</body>  
+</html> 
